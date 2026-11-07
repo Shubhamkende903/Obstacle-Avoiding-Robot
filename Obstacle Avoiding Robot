@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int distance;
+
+    printf("Enter obstacle distance in cm: ");
+    scanf("%d", &distance);
+
+    if(distance <= 10) {
+        printf("Obstacle detected!\n");
+        printf("Robot turning Right\n");
+    }
+    else {
+        printf("Path is clear\n");
+        printf("Robot moving Forward\n");
+    }
+
+    return 0;
+}
